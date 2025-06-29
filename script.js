@@ -40,7 +40,6 @@ hintIcon.addEventListener("click",function(){
 // Random number created
 const randomNum = Math.random()*100;
 const fixedNum = randomNum.toFixed(0)
-console.log(fixedNum);
 
 //Message div
 const tryAgain_Container = document.createElement("div");
@@ -63,9 +62,8 @@ const value = input.value;
     
     }
 
-    else if (value == fixedNum){
-        console.log("great");      
-        // Container of message 
+    else if (value == fixedNum){    
+        // Message container
         container.appendChild(tryAgain_Container);
         // Message
         tryAgain_Container.appendChild(message);
@@ -81,8 +79,7 @@ const value = input.value;
         container.style.flexDirection = `row`
     }
     else if (value !== fixedNum){
-        console.log("NO NO");
-        // Container of message 
+        // Message container
         container.appendChild(tryAgain_Container);
         // Message
         tryAgain_Container.appendChild(message);

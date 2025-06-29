@@ -19,7 +19,7 @@ body {
     text-align: start;
 }
 .description{
-    color: rgb(28, 224, 28);
+    color: rgb(8, 245, 8);
     font-size: 20px;
     font-weight: 500;
 }
@@ -33,13 +33,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 12px rgba(255, 250, 250, 0.6);
     z-index: 1;
-    background: linear-gradient(40deg,yellow,rgb(153, 10, 10), #1414a7, #17c2c2);
-    border-left: 2px solid white;
-    border-right: 2px solid orange;
+    background: linear-gradient(-35deg,yellow,rgb(226, 22, 22), #0bbdbd, #1414a7);
     height: auto;
+    animation:animate 0.1s all ease infinite;
 }
+@keyframes animate {
+
+    10%{
+        box-shadow: 0 0px 12px rgba(212, 35, 35, 0.945);
+    }
+        
+    }
+
 .input-div{
     display: flex;
     align-items: center;
