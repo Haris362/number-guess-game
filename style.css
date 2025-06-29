@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #151522);
+    position: relative;
+}
+.game-heading{
+    color: white;
+    text-align: start;
+}
+.description{
+    color: rgb(28, 224, 28);
+    font-size: 20px;
+    font-weight: 500;
+}
+.container {
+    position: relative;
+    padding: 20px 20px;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    background: linear-gradient(40deg,yellow,rgb(153, 10, 10), #1414a7, #17c2c2);
+    border-left: 2px solid white;
+    border-right: 2px solid orange;
+    height: auto;
+}
+.input-div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: auto ;
+    height: 40px;
+
+}
+.input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    transition: transform 0.3s;
+}
+
+.input:focus{
+     transform: scale(1.01);
+     box-shadow: 0 0 10px #fff;
+}
+.input:focus .enter-Button{
+    color: red;
+}
+
+.enter-Button{
+    font-size: 16px;
+    font-weight: 470;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+    padding: 10px 15px;
+}
+.try-Button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 470;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+    margin-bottom: 30px;
+}
+
+.enter-Button:hover,
+.try-Button:hover {
+     background: #30586b;
+     color: #fff;
+     transform: scale(1.05);
+     box-shadow: 0px 0px 10px #fff;
+}
+
+.message-Container {
+    margin-top: 20px;
+    animation: slideUp 0.5s ease;
+}
+.hintDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    color: white;
+} 
+#hintIcon{
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+
+.message{
+     font-size: 18px;
+     font-weight: bold;
+     color: white;
+     margin-bottom: 10px;
+}
